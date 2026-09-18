@@ -1,0 +1,50 @@
+{
+    "title": "إعدادات البحث (Haraj Scraper)",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "search": {
+            "title": "كلمة البحث",
+            "type": "string",
+            "description": "الكلمة المراد البحث عنها (مثال: شقق للبيع، كامري 2024)",
+            "editor": "textfield"
+        },
+        "city": {
+            "title": "المدينة (اختياري)",
+            "type": "string",
+            "description": "اسم المدينة لتضييق نطاق البحث (مثال: الرياض، جدة)",
+            "editor": "textfield"
+        },
+        "maxResults": {
+            "title": "الحد الأقصى للنتائج",
+            "type": "integer",
+            "description": "عدد الإعلانات المطلوب استخراجها.",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 10000
+        },
+        "onlyWithImage": {
+            "title": "إعلانات بصور فقط",
+            "type": "boolean",
+            "description": "تفعيل لاستخراج الإعلانات التي تحتوي على صور فقط.",
+            "default": false
+        },
+        "proxyConfiguration": {
+            "title": "إعدادات البروكسي",
+            "type": "object",
+            "description": "البروكسي السكني Residential موصى به بقوة.",
+            "editor": "proxy",
+            "default": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": ["RESIDENTIAL"]
+            }
+        },
+        "webhookUrl": {
+            "title": "رابط الـ Webhook (اختياري)",
+            "type": "string",
+            "description": "رابط لاستقبال تنبيه تلقائي عند انتهاء السحب.",
+            "editor": "textfield"
+        }
+    },
+    "required": ["search", "proxyConfiguration"]
+}
