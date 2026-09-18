@@ -1,0 +1,59 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "name": {
+            "title": "عنوان الإعلان",
+            "type": "string"
+        },
+        "phone": {
+            "title": "رقم الجوال",
+            "type": "string"
+        },
+        "priceSar": {
+            "title": "السعر (ريال)",
+            "type": "string"
+        },
+        "city": {
+            "title": "المدينة",
+            "type": "string"
+        },
+        "posted_at": {
+            "title": "تاريخ النشر",
+            "type": "string"
+        },
+        "posted_at_iso": {
+            "title": "تاريخ النشر (ISO)",
+            "type": "string"
+        },
+        "url": {
+            "title": "رابط الإعلان",
+            "type": "string"
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "نظرة عامة",
+            "transformation": {
+                "fields": [
+                    "name",
+                    "phone",
+                    "priceSar",
+                    "city",
+                    "posted_at",
+                    "url"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "name": { "label": "عنوان الإعلان", "format": "text" },
+                    "phone": { "label": "الجوال", "format": "text" },
+                    "priceSar": { "label": "السعر", "format": "text" },
+                    "city": { "label": "المدينة", "format": "text" },
+                    "posted_at": { "label": "تاريخ النشر", "format": "text" },
+                    "url": { "label": "الرابط", "format": "link" }
+                }
+            }
+        }
+    }
+}
