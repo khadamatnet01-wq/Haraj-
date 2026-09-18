@@ -1,0 +1,23 @@
+{
+    "actorSpecification": 1,
+    "name": "haraj-custom-scraper",
+    "title": "Haraj Custom Scraper (خاص)",
+    "description": "أكتور مخصّص لاستخراج إعلانات حراج (haraj.com.sa) حسب كلمة بحث ومدينة، بصيغة مخرجات متوافقة مباشرة مع منصّتنا.",
+    "version": "1.0.0",
+    "buildTag": "latest",
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile",
+    "readme": "../README.md",
+    "defaultRunOptions": {
+        "build": "latest",
+        "memoryMbytes": 1024,
+        "timeoutSecs": 600
+    },
+    "meta": {
+        "category": "E_COMMERCE"
+    },
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    }
+}
