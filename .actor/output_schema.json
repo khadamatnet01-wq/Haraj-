@@ -1,0 +1,13 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "مخرجات التشغيل",
+    "description": "البيانات والإعلانات التي تم استخراجها.",
+    "properties": {
+        "results": {
+            "title": "النتائج (Dataset)",
+            "type": "string",
+            "description": "جدول الإعلانات المستخرجة بالكامل (يحتوي على الجوال، السعر، والعنوان).",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}
