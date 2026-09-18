@@ -1,0 +1,15 @@
+{
+    "name": "haraj-custom-scraper",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "أكتور خاص لاستخراج إعلانات حراج (haraj.com.sa) بصيغة متوافقة مع منصّتنا",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "node src/main.js"
+    },
+    "dependencies": {
+        "apify": "^3.2.0",
+        "crawlee": "^3.10.0",
+        "playwright": "*"
+    }
+}
